@@ -12,18 +12,8 @@ const Homepage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-full flex flex-col lg:flex-row p-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
-        {/* IMAGE CONTAINER */}
-        <div className="h-96 md:h-full lg:h-full lg:w-1/2 relative mb-8 lg:mb-0">
-          <Image
-            src="/hero.png"
-            alt="Hero Image"
-            fill
-            className="object-contain"
-          />
-        </div>
-
         {/* TEXT CONTAINER */}
-        <div className="h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center order-2 lg:order-none">
           {/* TITLE */}
           <h1 className="text-4xl md:text-5xl font-bold text-center lg:text-left">
             Crafting Digital Experiences: My Creative Journey
@@ -38,16 +28,16 @@ const Homepage = () => {
             experiences. Explore my work and see how I blend aesthetic design
             with cutting-edge technology to bring visionary ideas to life.
           </p>
+        </div>
 
-          {/* BUTTONS */}
-          <div className="w-full flex flex-col sm:flex-row gap-4 md:justify-center lg:justify-start">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
-              View My Work
-            </button>
-            <button className="p-4 rounded-lg ring-1 ring-black">
-              Contact Me
-            </button>
-          </div>
+        {/* IMAGE CONTAINER */}
+        <div className="h-96 md:h-full lg:h-full lg:w-1/2 relative mb-8 lg:mb-0 order-1 lg:order-none">
+          <Image
+            src="/profile.png"
+            alt="Hero Image"
+            fill
+            className="object-contain"
+          />
         </div>
       </div>
     </motion.div>
