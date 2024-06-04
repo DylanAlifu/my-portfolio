@@ -1,4 +1,4 @@
-import ExperienceItem from './ExperienceItem';
+import ExperienceItem from "./experienceItem";
 
 const ExperienceList = () => {
   const experiences = [

@@ -4,6 +4,7 @@
 import React, { useRef } from "react";
 import { motion, useInView, useScroll } from "framer-motion";
 import Brain from "../../components/brain";
+import ExperienceList from "../../components/experiences/experienceList";
 
 const AboutPage = () => {
   const containerRef = useRef();
@@ -157,6 +158,9 @@ m62 8 c-34 -21 -38 -21 -29 3 3 9 17 16 33 16 l26 0 -30 -19z m-347 -263 c-13
                 TypeScript
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                CSS/HTML
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Java
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
@@ -179,6 +183,15 @@ m62 8 c-34 -21 -38 -21 -29 3 3 9 17 16 33 16 l26 0 -30 -19z m-347 -263 c-13
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Framer Motion
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Git/GitHub
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                RESTful APIs
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Azure DevOps
               </div>
             </motion.div>
             {/* SKILL SCROLL SVG */}
@@ -225,207 +238,7 @@ m62 8 c-34 -21 -38 -21 -29 3 3 9 17 16 33 16 l26 0 -30 -19z m-347 -263 c-13
               animate={isExperienceRefInView ? { x: "0" } : {}}
               className="flex flex-col"
             >
-              {/* EXPERIENCE LIST ITEM - 1 */}
-              <div className="flex justify-between">
-                {/* LEFT */}
-                <div className="w-1/3">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Frontend Developer
-                  </div>
-                  {/* JOB DESCRIPTION */}
-                  <div className="p-3 text-sm italic">
-                    Enhanced user engagement by optimizing training content
-                    management application performance. Managed Agile sprints to
-                    reduce feature delivery times and increase team
-                    productivity. Conducted code reviews, followed Git best
-                    practices, and wrote technical documentation for API
-                    integration and system upgrades. Improved UI with advanced
-                    React hooks, boosting responsiveness and accessibility for
-                    users with disabilities. Collaborated with UX designers and
-                    developers to maintain high graphical standards and ensure
-                    API compatibility, expanding the user base.
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-sm text-red-400 font-semibold">
-                    2023 - Present
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Boeing
-                  </div>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3"></div>
-              </div>
-
-              {/* EXPERIENCE LIST ITEM - 2 */}
-              <div className="flex justify-between">
-                {/* LEFT */}
-                <div className="w-1/3"></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Software Development Engineer in Test
-                  </div>
-                  {/* JOB DESCRIPTION */}
-                  <div className="p-3 text-sm italic">
-                    Designed flexible test frameworks for frontend and backend,
-                    promoting testing coverage and decreasing execution time.
-                    Developed test plans for key projects, enhancing
-                    cross-functional collaboration to cut defect resolution time
-                    and shorten time-to-market. Conducted root cause analyses on
-                    major incidents annually, reducing defect recurrence and
-                    improving product reliability. Mentored junior QA engineers,
-                    boosting team productivity and promoting professional
-                    development.
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-sm text-red-400 font-semibold">
-                    2022 - 2023
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Boeing
-                  </div>
-                </div>
-              </div>
-
-              {/* EXPERIENCE LIST ITEM - 3 */}
-              <div className="flex justify-between">
-                {/* LEFT */}
-                <div className="w-1/3">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Test Automation Engineer
-                  </div>
-                  {/* JOB DESCRIPTION */}
-                  <div className="p-3 text-sm italic">
-                    Established and maintained a Java-Selenium-based Automation
-                    Framework, automating test scenarios across Web, REST API,
-                    and Mobile applications, significantly reducing manual
-                    testing efforts and improving test efficiency. Executed
-                    comprehensive database testing with SQL and JDBC, ensuring
-                    data integrity and functionality. Authored and disseminated
-                    best practices and standards across a team of automation
-                    engineers, ensuring consistency and boosting productivity.
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-sm text-red-400 font-semibold">
-                    2020 - 2022
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Mobile Integration Workgroup
-                  </div>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3"></div>
-              </div>
-
-              {/* EXPERIENCE LIST ITEM - 4 */}
-              <div className="flex justify-between">
-                {/* LEFT */}
-                <div className="w-1/3"></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Test Automation Engineer
-                  </div>
-                  {/* JOB DESCRIPTION */}
-                  <div className="p-3 text-sm italic">
-                    Crafted a Behavior Driven Framework from scratch using JAVA
-                    and Cucumber, enabling structured and efficient
-                    scenario-based testing. Reported and documented software
-                    defects in Azure DevOps, playing a pivotal role in reducing
-                    bug resolution time through collaborative efforts with
-                    developers. Championed API testing execution, applying
-                    Postman and REST-Assured to conduct automated tests,
-                    enhancing RESTful service reliability.
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-sm text-red-400 font-semibold">
-                    2020 - 2020
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Boeing
-                  </div>
-                </div>
-              </div>
-
-              {/* EXPERIENCE LIST ITEM - 5 */}
-              <div className="flex justify-between">
-                {/* LEFT */}
-                <div className="w-1/3">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Quality Assurance Engineer
-                  </div>
-                  {/* JOB DESCRIPTION */}
-                  <div className="p-3 text-sm italic">
-                    Played a crucial role in analyzing user stories,
-                    spearheading defect tracking, and harmonizing development
-                    with testing operations, leading to a significant decrease
-                    in production defects. Managed and maintained Automation
-                    Scripts in Selenium, leveraging Java and GIT for efficient
-                    resource coordination, ensuring script reliability and
-                    accessibility via GitHub.
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-sm text-red-400 font-semibold">
-                    2018 - 2020
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    HealthSherpa
-                  </div>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3"></div>
-              </div>
+              <ExperienceList />
             </motion.div>
           </div>
         </div>

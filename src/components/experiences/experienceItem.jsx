@@ -1,20 +1,25 @@
 const ExperienceItem = ({ title, description, date, company, position }) => {
+  // Convert the description into an array of bullet points
+  const descriptionItems = description.split('. ').filter(item => item);
+
   return (
     <div className="flex flex-col lg:flex-row justify-between">
-      {/* LEFT */}
       {position === 'left' ? (
         <>
           <div className="w-full lg:w-1/3 mb-4 lg:mb-0">
-            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-              {title}
+            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg flex flex-col md:flex-row justify-between">
+              <span>{title}</span>
+              <span className="text-sm font-normal md:ml-2 lg:hidden">{company}</span>
             </div>
-            <div className="p-3 text-sm italic">
-              {description}
-            </div>
+            <ul className="list-disc list-inside p-3 text-sm italic">
+              {descriptionItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
             <div className="p-3 text-sm text-red-400 font-semibold">
               {date}
             </div>
-            <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+            <div className="p-1 rounded bg-white text-sm font-semibold w-fit hidden lg:block">
               {company}
             </div>
           </div>
@@ -34,16 +39,19 @@ const ExperienceItem = ({ title, description, date, company, position }) => {
             </div>
           </div>
           <div className="w-full lg:w-1/3 mb-4 lg:mb-0">
-            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-              {title}
+            <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg flex flex-col md:flex-row justify-between">
+              <span>{title}</span>
+              <span className="text-sm font-normal md:ml-2 lg:hidden">{company}</span>
             </div>
-            <div className="p-3 text-sm italic">
-              {description}
-            </div>
+            <ul className="list-disc list-inside p-3 text-sm italic">
+              {descriptionItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
             <div className="p-3 text-sm text-red-400 font-semibold">
               {date}
             </div>
-            <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+            <div className="p-1 rounded bg-white text-sm font-semibold w-fit hidden lg:block">
               {company}
             </div>
           </div>
