@@ -55,7 +55,7 @@ const ExperienceList = () => {
         Postman and REST-Assured to conduct automated tests,
         enhancing RESTful service reliability.`,
       date: "2020 - 2020",
-      company: "Boeing"
+      company: "City of Seattle - IT Department"
     },
     {
       title: "Quality Assurance Engineer",
